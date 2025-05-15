@@ -6,7 +6,6 @@
 header {
     background-image: url(./images/med1.jpg);
     background-position: center;
-    /* background-attachment: fixed; */
     background-size: cover;
     height: 100vh;
 }
@@ -68,13 +67,7 @@ header a {
     padding-top: 20px;
 }
 
-.sec-title p {
-    padding-top: 20px;
-    font-size: large;
-    line-height: 30px;
-    color: rgba(2, 2, 2, 0.856);
-    font-family: 'Times New Roman', Times, serif;
-}
+    
 
 .sec-title button {
     background-color: rgb(35, 71, 126);
@@ -82,7 +75,7 @@ header a {
     padding: 10px;
     border: 1px solid rgba(208, 208, 208, 0.783);
     width: 15rem;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .sec-title button:hover {
@@ -116,6 +109,7 @@ header a {
     width: 100%;
 
 }
+
 
 .about p {
     width: 100%;
@@ -151,15 +145,6 @@ header a {
     align-items: center;
     margin: 40px 20px 100px;
 }
-
-/*
-.servicestext {
-    margin-left: 50px;
-    padding-left: 30px;
-} */
-
-
-
 
 
 .free {
@@ -205,6 +190,7 @@ header a {
     padding: 40px;
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
+    margin: 10px;
 }
 
 .services h1 {
@@ -339,6 +325,23 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
 }
+
+.maps{
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.map-container{
+    margin-top: 1rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+
 
 .social-footer {
     justify-content: center;
