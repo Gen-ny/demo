@@ -4,9 +4,9 @@
 }
 
 header {
-    background-image: url(/images/med1.jpg);
+    background-image: url(./images/med1.jpg);
     background-position: center;
-   /* background-attachment: fixed; */
+    /* background-attachment: fixed; */
     background-size: cover;
     height: 100vh;
 }
@@ -17,7 +17,8 @@ nav {
     gap: 20rem;
     background-color: rgb(223, 219, 219);
     padding: 1rem;
-
+    position: sticky;
+    top: 0;
 }
 
 nav span {
@@ -30,6 +31,7 @@ nav span {
     display: flex;
     justify-content: center;
     gap: 3rem;
+
 }
 
 .nav-bar li {
@@ -84,7 +86,8 @@ header a {
 }
 
 .sec-title button:hover {
-    background-color: rgb(26, 162, 196);
+    background-color: transparent;
+    color: rgb(19, 58, 117);
     transition: 0.5s;
 }
 
@@ -97,28 +100,29 @@ header a {
     display: flex;
     justify-content: center;
     align-items: justify;
-    margin: 40px 20px 100px;
-    height: 70vh;
+ 
+    margin-top: 40px;
+    width: 100%;
 }
 
 .about img {
     width: 50%;
-    height: 100%;
-    margin-top: 40px;
+    margin-left: 10px;
 }
 
-.about-text{
-    margin-left: 50px;
-    padding-left: 30px;
+.about-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
 
 }
 
 .about p {
     width: 100%;
-    padding: 5px;
     font-size: large;
     color: rgba(2, 2, 2, 0.856);
     font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
 }
 
 .about h1 {
@@ -129,14 +133,249 @@ header a {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
- 
+
 }
 
 .about h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(35, 71, 126);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 20px 100px;
+}
+
+/*
+.servicestext {
+    margin-left: 50px;
+    padding-left: 30px;
+} */
+
+
+
+
+
+.free {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: rgb(35, 71, 126);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+}
+
+.form input {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 1px rgb(203, 204, 206);
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(41, 39, 39, 0.783);
+}
+.form input:hover {
+    border: solid 1px rgb(35, 71, 126);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}   
+.form input::placeholder {
+    color: rgba(107, 103, 103, 0.783);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.services {
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.services h1 {
+    color: rgb(35, 71, 126);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(45% - 30px);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    width: 50%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-rounded {
+    background-color: #ffeaea;
+    border-radius: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-truck-medical {
+    color: #F16C72;
+    font-size: 24px;
+}
+
+.fa-user-md {
+    color: #F16C72;
+    font-size: 24px;
+}
+
+.fa-stethoscope {
+    color: #F16C72;
+    font-size: 24px;
+}
+
+.fa-clock-o {
+    color: #F16C72;
+    font-size: 24px;
+}
+
+
+
+.service-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-description {
+    width: 50%;
+}
+
+.service-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.services button {
+    background-color: rgb(219, 76, 76);
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid rgba(208, 208, 208, 0.783);
+    width: 85%;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.services button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(219, 76, 76);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: rgb(35, 71, 126);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.contact {
+
+    justify-content: center;
+    align-items: center;
+    margin: 5px 20px 100px 150px;
+    line-height: 30px;
+
+}
+
+.contact h4 {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.social-footer {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    line-height: 30px;
+    margin: 5px 150px 100px;
+}
+
+.social-footer h4 {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-sector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    line-height: 30px;
+}
+
+.social-sector p {
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+}
+
+.fa-hospital {
+    margin-top: 40px;
 }
